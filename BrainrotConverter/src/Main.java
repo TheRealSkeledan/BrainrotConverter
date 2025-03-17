@@ -12,11 +12,11 @@ public class Main {
                 System.exit(0);
             }
             term = formatString(term);
-            System.out.println(term.substring(0, findLastVowel(term)) + "uzz");
+            System.out.println(term.substring(0, findFirstVowel(term)) + "uzz" + (formatString(term) + " Huzz");
         }
     }
 
-    public static int findLastVowel(String str) {
+    public static int findFirstVowel(String str) {
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
         for(int i = 0; i < str.length(); i++) {
             for(char c : vowels) {
